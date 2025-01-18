@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Typing Tutor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="top-bar" style="display: none">
+      <span id="total-words">Total Words: 0</span>
+      <span id="total-sessions">Total Sessions: 0</span>
+    </div>
+    <div id="main-container">
+      <div id="welcome-container">
+        <h1>Welcome to English Typing Tutor</h1>
+        <button id="new-learner-button">New Learner</button>
+        <button id="old-learner-button">Old Learner</button>
+      </div>
+      <div id="import-container" style="display: none">
+        <button id="import-button">Import Data</button>
+        <input
+          type="file"
+          id="data-import"
+          style="display: none"
+          accept=".json"
+        />
+      </div>
+      <div id="import-success-container" style="display: none">
+        <h2>Personalized Data Successfully Imported!</h2>
+        <button id="start-session-imported">Start Session</button>
+      </div>
+      <div id="typing-container" style="display: none">
+        <p id="definition">Definition here...</p>
+        <div id="input-area">
+          <input type="text" id="user-input" placeholder="Type here..." />
+          <button id="next-word" style="display: none">Next Word</button>
+        </div>
+        <p id="word-to-type">Example</p>
+        <audio id="pronunciation"></audio>
+      </div>
+      <button id="start-session" style="display: none">Start Session</button>
+
+      <div id="end-session-container" style="display: none">
+        <button id="download-button">Download Data</button>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
